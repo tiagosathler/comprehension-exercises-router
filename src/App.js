@@ -16,8 +16,8 @@ class App extends Component {
         </ul>
       </nav>
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/users" component={Users} />
+        <Route exact path="/about" component={About} />
+        <Route excat path="/users" component={() => <Users greetingsMessage="Boa tarde" />} />
       </BrowserRouter>  
     );
   }
